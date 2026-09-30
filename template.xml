@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+
+<!DOCTYPE albums [
+    
+    <!ELEMENT albums (genre, album+)>
+    
+    <!ELEMENT genre (#PCDATA)>
+    
+    <!ELEMENT album (title, artist, price, description, searchTags, reviews, picture, relatedURLs)>
+    
+    <!ELEMENT title (#PCDATA)>
+    
+    <!ELEMENT artist (#PCDATA)>
+    <!ELEMENT price (#PCDATA)>
+    
+    <!ELEMENT description (#PCDATA)>
+    
+    <!ELEMENT searchTags (tag*)>
+    
+    <!ELEMENT tag (#PCDATA)>
+    
+    <!ELEMENT reviews (review*)>
+    
+    <!ELEMENT review (#PCDATA)>
+    
+    <!ELEMENT picture (pictureurl+)>
+    
+    <!ELEMENT pictureurl (#PCDATA)>
+    
+    <!ELEMENT relatedURLs (url)>
+    
+    <!ELEMENT url (#PCDATA)>
+    
+    <!ATTLIST review
+        score (0 | 1 | 2 | 3 | 4 | 5) #REQUIRED
+    >
+    
+    <!ENTITY storeName "My Music Store">
+    
+    <!ENTITY reviewMessage "Customer Review">
+    
+]>
+<albums>
+    <genre>Rock</genre>
+
+    <album>
+        <title>Album Title</title>
+        <artist>Artist Name</artist>
+        <price>29.95</price>
+
+        <description>
+            Welcome to &storeName;. This is a placeholder album description.
+        </description>
+
+        <searchTags>
+            <tag>Jazz</tag>
+            <tag>Classical</tag>
+        </searchTags>
+
+        <reviews>
+            <review score="5">&reviewMessage;: Great album!</review>
+        </reviews>
+        <picture>
+            <pictureurl>images/133932498485823249.jpg</pictureurl>
+        </picture>
+
+        <relatedURLs>
+            <url>https://example.com</url>
+        </relatedURLs>
+    </album>
+
+</albums>
+    

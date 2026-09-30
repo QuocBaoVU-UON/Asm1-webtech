@@ -1,0 +1,148 @@
+
+/* External stylesheet for all TuneTown webpages */
+
+/* General page styling */
+body {
+    margin-left: 40px;
+    margin-right: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f1ea;
+    color: #222222;
+}
+
+/* Header styling */
+header {
+    background-color: #263238;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Navigation styling */
+nav {
+    background-color: #37474f;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Link states */
+a:link {
+    color: #1565c0;
+}
+
+a:visited {
+    color: #7b1fa2;
+}
+
+a:hover {
+    color: #d84315;
+    font-style: italic;
+}
+
+a:active {
+    color: #2e7d32;
+}
+
+/* Main content */
+main {
+    background-color: white;
+    padding: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+/* ID selector */
+#featured-albums {
+    border: 2px solid #37474f;
+    padding: 20px;
+}
+
+/* Class selector */
+.album-description {
+    font-size: 1rem;
+    color: #444444;
+}
+
+/* Div styling */
+.album-highlight {
+    background-color: #fff3cd;
+    border-left: 5px solid #f0ad4e;
+    padding: 15px;
+    margin: 15px 0;
+}
+
+/* Span styling */
+.music-highlight {
+    color: #c62828;
+    font-weight: bold;
+}
+
+/* Images */
+img {
+    max-width: 250px;
+    height: auto;
+    display: block;
+    margin: 10px 0;
+}
+
+/* Form styling */
+form {
+    max-width: 700px;
+}
+
+input,
+textarea {
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 8px;
+    margin-top: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+fieldset {
+    margin-top: 15px;
+    padding: 15px;
+}
+
+button {
+    padding: 10px 18px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+/* Footer styling */
+footer {
+    background-color: #263238;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+

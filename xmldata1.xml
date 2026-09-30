@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- File: xmldata1.xml
+     Name: Quoc Bao VU
+     Date: 29/09/2026
+-->
+
+<!DOCTYPE albums [
+
+    <!ELEMENT albums (genre, album+)>
+    <!ELEMENT genre (#PCDATA)>
+
+    <!ELEMENT album (title, artist, price, description, searchTags, reviews, picture, relatedURLs)>
+
+    <!ELEMENT title (#PCDATA)>
+    <!ELEMENT artist (#PCDATA)>
+    <!ELEMENT price (#PCDATA)>
+    <!ELEMENT description (#PCDATA)>
+
+    <!ELEMENT searchTags (tag*)>
+    <!ELEMENT tag (#PCDATA)>
+
+    <!ELEMENT reviews (review*)>
+    <!ELEMENT review (#PCDATA)>
+
+    <!ELEMENT picture (pictureurl+)>
+    <!ELEMENT pictureurl (#PCDATA)>
+
+    <!ELEMENT relatedURLs (url)>
+    <!ELEMENT url (#PCDATA)>
+
+    <!ATTLIST review
+        score (0 | 1 | 2 | 3 | 4 | 5) #REQUIRED
+    >
+
+    <!ENTITY storeName "My Music Store">
+    <!ENTITY reviewMessage "Customer Review">
+
+]>
+<albums>
+    <genre>Jazz</genre>
+    <album>
+        <title>Kind of Blue</title>
+        <artist>Miles Davis</artist>
+        <price>29.95</price>
+        <description>
+            &storeName; presents a classic jazz album featuring relaxed,
+            sophisticated performances and influential improvisation.
+        </description>
+        <searchTags>
+            <tag>jazz</tag>
+            <tag>trumpet</tag>
+            <tag>smooth</tag>
+        </searchTags>
+        <reviews>
+            <review score="5">&reviewMessage;: A timeless jazz recording.</review>
+            <review score="4">Beautiful performances and atmosphere.</review>
+        </reviews>
+        <picture>
+            <pictureurl>images/kind-of-blue.jpg</pictureurl>
+        </picture>
+        <relatedURLs>
+            <url>https://en.wikipedia.org/wiki/Kind_of_Blue</url>
+        </relatedURLs>
+    </album>
+
+    <album>
+        <title>Time Out</title>
+        <artist>Dave Brubeck Quartet</artist>
+        <price>27.95</price>
+        <description>
+            A landmark jazz album known for its unusual rhythms,
+            memorable melodies and distinctive quartet performances.
+        </description>
+        <searchTags>
+            <tag>jazz</tag>
+            <tag>piano</tag>
+            <tag>instrumental</tag>
+        </searchTags>
+        <reviews>
+        </reviews>
+        <picture>
+            <pictureurl>images/time-out.jpg</pictureurl>
+        </picture>
+        <relatedURLs>
+            <url>https://en.wikipedia.org/wiki/Time_Out_(Dave_Brubeck_Quartet_album)</url>
+        </relatedURLs>
+    </album>
+
+    <album>
+        <title>Getz/Gilberto</title>
+        <artist>Stan Getz and João Gilberto</artist>
+        <price>31.95</price>
+        <description>
+            A relaxed combination of jazz and Brazilian bossa nova
+            featuring saxophone, guitar and gentle vocals.
+        </description>
+        <searchTags>
+            <tag>bossa nova</tag>
+            <tag>saxophone</tag>
+            <tag>relaxed</tag>
+        </searchTags>
+        <reviews>
+            <review score="5">&reviewMessage;: Smooth and relaxing.</review>
+        </reviews>
+        <picture>
+            <pictureurl>images/getz-gilberto.jpg</pictureurl>
+        </picture>
+        <relatedURLs>
+            <url>https://en.wikipedia.org/wiki/Getz/Gilberto</url>
+        </relatedURLs>
+    </album>
+
+</albums>

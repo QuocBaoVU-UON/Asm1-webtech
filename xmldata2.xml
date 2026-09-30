@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- File: xmldata2.xml
+     Name: Quoc Bao VU
+     Date: 29/09/2026
+-->
+
+<!DOCTYPE albums [
+
+    <!ELEMENT albums (genre, album+)>
+    <!ELEMENT genre (#PCDATA)>
+
+    <!ELEMENT album (title, artist, price, description, searchTags, reviews, picture, relatedURLs)>
+
+    <!ELEMENT title (#PCDATA)>
+    <!ELEMENT artist (#PCDATA)>
+    <!ELEMENT price (#PCDATA)>
+    <!ELEMENT description (#PCDATA)>
+
+    <!ELEMENT searchTags (tag*)>
+    <!ELEMENT tag (#PCDATA)>
+
+    <!ELEMENT reviews (review*)>
+    <!ELEMENT review (#PCDATA)>
+
+    <!ELEMENT picture (pictureurl+)>
+    <!ELEMENT pictureurl (#PCDATA)>
+    
+
+    <!ELEMENT relatedURLs (url)>
+    <!ELEMENT url (#PCDATA)>
+
+    <!ATTLIST review
+        score (0 | 1 | 2 | 3 | 4 | 5) #REQUIRED
+    >
+
+    <!ENTITY storeName "My Music Store">
+    <!ENTITY reviewMessage "Customer Review">
+
+]>
+
+<albums>
+
+    <genre>Classical</genre>
+
+    <album>
+        <title>The Four Seasons</title>
+        <artist>Antonio Vivaldi</artist>
+        <price>24.95</price>
+        <description>
+            &storeName; presents a famous set of violin concertos
+            representing the changing seasons through expressive melodies.
+        </description>
+        <searchTags>
+            <tag>classical</tag>
+            <tag>violin</tag>
+            <tag>baroque</tag>
+        </searchTags>
+        <reviews>
+            <review score="5">&reviewMessage;: Beautiful violin performances.</review>
+            <review score="4">Energetic and enjoyable.</review>
+        </reviews>
+        <picture>
+            <pictureurl>images/four-seasons.jpg</pictureurl>
+        </picture>
+        <relatedURLs>
+            <url>https://en.wikipedia.org/wiki/The_Four_Seasons_(Vivaldi)</url>
+        </relatedURLs>
+    </album>
+
+    <album>
+        <title>Symphony No. 5</title>
+        <artist>Ludwig van Beethoven</artist>
+        <price>26.95</price>
+        <description>
+            A powerful classical symphony recognised for its dramatic
+            opening motif and memorable orchestral themes.
+        </description>
+        <searchTags>
+            <tag>classical</tag>
+            <tag>orchestra</tag>
+            <tag>symphony</tag>
+        </searchTags>
+        <reviews>
+            <review score="5">A powerful and dramatic performance.</review>
+        </reviews>
+        <picture>
+            <pictureurl>images/symphony-no-5.jpg</pictureurl>
+        </picture>
+        <relatedURLs>
+            <url>https://en.wikipedia.org/wiki/Symphony_No._5_(Beethoven)</url>
+        </relatedURLs>
+    </album>
+
+    <album>
+        <title>Clair de Lune</title>
+        <artist>Claude Debussy</artist>
+        <price>22.95</price>
+        <description>
+            &storeName; features this gentle impressionist composition,
+            known for its peaceful mood and expressive piano writing.
+        </description>
+        <searchTags>
+            <tag>piano</tag>
+            <tag>calm</tag>
+            <tag>impressionist</tag>
+        </searchTags>
+        <reviews>
+        </reviews>
+        <picture>
+            <pictureurl>images/clair-de-lune.jpg</pictureurl>
+        </picture>
+        <relatedURLs>
+            <url>https://en.wikipedia.org/wiki/Clair_de_Lune_(Debussy)</url>
+        </relatedURLs>
+    </album>
+
+</albums>
+   
+

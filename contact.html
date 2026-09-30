@@ -1,0 +1,96 @@
+```html
+<!-- File: contact.html
+     Name: YOUR NAME
+     Date: 30/09/2026
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TuneTown - Contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Site header and navigation -->
+    <header>
+        <h1>TuneTown</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <!-- Contact form section -->
+        <section>
+            <h1>Contact TuneTown</h1>
+
+            <h2>Send Us a Message</h2>
+
+            <form action="https://jkorpela.fi/cgi-bin/echo.cgi" method="post">
+
+                <p>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </p>
+
+                <p>
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+                </p>
+
+                <p>
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="subject" required>
+                </p>
+
+                <p>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="6" cols="40" required></textarea>
+                </p>
+
+                <fieldset>
+                    <legend>Is this message urgent?</legend>
+
+                    <p>
+                        <input type="radio" id="urgent-yes" name="urgent" value="yes" required>
+                        <label for="urgent-yes">Yes</label>
+                    </p>
+
+                    <p>
+                        <input type="radio" id="urgent-no" name="urgent" value="no" required>
+                        <label for="urgent-no">No</label>
+                    </p>
+                </fieldset>
+
+                <p>
+                    <button type="submit">Submit</button>
+                    <button type="reset">Clear</button>
+                </p>
+
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Copyright and student information -->
+    <footer>
+        <p>
+            &copy; 2026 TuneTown | YOUR NAME | Student Number: YOUR STUDENT NUMBER |
+            YOUR EMAIL | YOUR DEGREE
+        </p>
+    </footer>
+
+</body>
+
+</html>
+```
